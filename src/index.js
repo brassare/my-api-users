@@ -3,7 +3,7 @@ const routes = require('./mocks/routes')
 const { url } = require('url')
 
 const server = http.createServer((request, response) => {
-  const parsedUrl = new URL(`htttp://localhost:3000${request.url}`)
+  const parsedUrl = new URL(`http://localhost:3000${request.url}`)
   console.log(`Request method: ${request.method} | Endpoint: ${parsedUrl.pathname}`)
 
   let { pathname } = parsedUrl
